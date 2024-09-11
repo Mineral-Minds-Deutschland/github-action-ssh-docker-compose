@@ -1,9 +1,9 @@
 ## github-action-ssh-docker-compose
-Simple github action to run docker-compose on remote host.
+Simple github action to run docker compose on remote host.
 
 This action packs contents of the action workspace into archive.
 Logs into remote host via ssh. Unpacks the workspace there and runs
-`docker-compose up -d` command.
+`docker compose up -d` command.
 
 Comparing to other actions with similar behavior this one does not use any
 unknown docker-images. It is entirely built from Dockerfile on top of
@@ -23,7 +23,7 @@ unknown docker-images. It is entirely built from Dockerfile on top of
 # Usage example
 
 Let's say we have a repo with single docker-compose file in it and remote
-ubuntu based server with docker and docker-compose installed.
+ubuntu based server with docker and docker compose installed.
 
 1. Generate key pair, do not use a password here.
 
